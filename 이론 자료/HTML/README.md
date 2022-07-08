@@ -102,6 +102,15 @@ ul > li
   - clear : left, right, both  
   
   
-## position 속성  
+## nth-child, nth-of-type  
+- nth-child()
+  - 자식요소 중에서 정해져있지 않은 순서를 정하는 가상클래스  
+  - 1부터 시작  
+  - 태그를 구분하지 않고 출현 순서에 따라 결정된다.  
+  - 다른 요소가 들어오면 순서가 달라질 수 있다.  
+
+- nth-of-type()  
+  - 태그를 구분하여 순서를 부여한다.  
+  - div.nth-of-type() : 자식요소 중 div의 순서 체크  
 
 
