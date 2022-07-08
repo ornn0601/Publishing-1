@@ -12,7 +12,7 @@
     }
 
     body {
-      list-style: 1.5;
+      line-height: 1.5;
       margin: 0;
       font-weight: 300;
       background-color: #333;
@@ -20,6 +20,8 @@
       justify-content: center;
       align-items: center;
       height: 100vh;
+      overflow-x: hidden;
+      width: 100%;
     }
     a {
       text-decoration: none;
@@ -115,6 +117,42 @@
       }
       100% {
         transform: rotate(360deg);
+      }
+    }
+
+    @media all and (max-width: 980px) {
+
+      html {
+        font-size: 14px;
+      }
+
+      body {
+        display: block;
+        height: auto;
+        margin: 10vh 0;
+      }
+
+      .container {
+        display: block;
+        width: 100%;
+      }
+
+      .square {
+        width: 90vw;
+        height: 90vw;
+        margin: 10% auto;
+      }
+
+      .square div h2 {
+        font-size: min(max(10px, 5.38vw), 42px);
+      }
+      .square div p {
+        font-size: min(max(10px, 3.85vw), 30px);
+      }
+
+      .square div a {
+        font-size: min(max(10px, 3.85vw), 30px);
+        margin-top: 5vw;
       }
     }
 
