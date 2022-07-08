@@ -52,4 +52,56 @@ ul > li
 5. Tag selector  
   
   
-## 
+## 리스트 스타일  
+```css
+.li::before {
+  content: '아이콘';
+}
+```
+  
+  
+## box-shadow  
+- box-shadow: inset offset-x offset-y blur color  
+```css
+.div {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 20px rgba(0, 157, 255, 0.5);
+  box-shadow: 5px 5px 0 #98ccff;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.4);
+  box-shadow: inset 0 0 10px #fff;
+  box-shadow: inset 0 0 100px #000;
+}
+```  
+  
+  
+## text-shadow  
+- offset-x offset-y blur color  
+```css
+.div {
+  text-shadow: 5px 5px 0 dodgerblue;
+  text-shadow: 5px 5px 0 dodgerblue, 10px 10px 0 #90c8ff;
+}
+```  
+* inset기능을 사용할 수 없다.  
+  
+  
+## float  
+- 자식 요소에 float를 주었을 시 부모는 높이값을 잃는다. 그 높이 값을 찾기 위해 부모에 overflow: hidden을 통해 높이값을 가질 수 있다.  
+```css
+.parent {
+  width: 600px;
+  overflow: hidden;
+}
+.child {
+  float: left;
+}
+```
+  
+- clear  
+  - float 속성이 적용되면 다음 요소가 float속성을 상속 받는데 이것을 해제시킨다.  
+  - clear : left, right, both  
+  
+  
+## position 속성  
+
+
