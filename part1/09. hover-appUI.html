@@ -14,21 +14,24 @@
       line-height: 1.5em;
       margin: 0;
       height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      position: relative;
     }
     a {
       text-decoration: none;
       color: #222;
     }
 
-    .container {}
+    .container {
+      position: absolute;
+      top: 40%;
+      left: 30%;
+      transform: translate(-50%, -50%);
+    }
     .container .app-ui {
       position: relative;
-      width:340px;
+      width: 340px;
       transform: rotate(-30deg) skewX(20deg);
-      box-shadow: 0 0 20px rgba(0, 0, 0, .3);
+      box-shadow: 0 0 20px rgba(0, 0, 0, .5);
       transition: 0.5s;
       background-color: #eee;
     }
@@ -68,10 +71,10 @@
 
   <div class="container">
     <div class="app-ui">
-      <img src="http://ornn.co.kr//wp-content/uploads/home_test.jpg" alt="">
-      <img src="http://ornn.co.kr//wp-content/uploads/home_test.jpg" alt="">
-      <img src="http://ornn.co.kr//wp-content/uploads/home_test.jpg" alt="">
-      <img src="http://ornn.co.kr//wp-content/uploads/home_test.jpg" alt="">
+      <img src="./images/app-ui-01.jpg" alt="app-ui-01">
+      <img src="./images/app-ui-02.jpg" alt="app-ui-02">
+      <img src="./images/app-ui-03.jpg" alt="app-ui-03">
+      <img src="./images/app-ui-04.jpg" alt="app-ui-04">
     </div>
 
   </div>
