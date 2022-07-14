@@ -78,6 +78,7 @@
     .title span {
       float: right;
       margin-top: 10px;
+      color: crimson;
     }
     
     /* info */
@@ -120,9 +121,12 @@
       margin-top: 10px;
     }
 
-    .color span {}
+    .color span {
+      border: 1px solid transparent;
+    }
     .color span.active {
       border-radius: 50%;
+      border: 1px solid #000;
     }
 
     .color span:nth-of-type(1) {
@@ -215,7 +219,11 @@
 
   <script>
 
-    $('.size span, .color span').click(function() {
+    // $('.size span, .color span').click(function() {
+    //   $(this).addClass('active');
+    //   $(this).siblings().removeClass('active');
+    // });
+    $('.size span, .color span').on('click', function() {
       $(this).addClass('active');
       $(this).siblings().removeClass('active');
     });
