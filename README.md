@@ -20,5 +20,16 @@
 8. html tag wrap : 드래그 태그 묶기 (option + w)  
   
   
+## 크롬 확장 프로그램  
+1. Page Ruler - 활성화된 브라우저 안에 요소의 크기 측정  
+2. image downloade - 이미지 다운로드  
+3. CSSViewer - css 정보 확인  
+4. ColorZilla - 화면 색상 추출  
+5. Responsive Web Design Tester - 모바일 기기 화면 보기  
+6. Nimbus - 캡쳐프로그램  
+7. MaraCopy - 복사 방지되어있는 텍스트 복사하기  
+
+
+  
 ## 참고 사이트
 1. [한글입숨](https://hangul.thefron.me/) 
