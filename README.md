@@ -27,9 +27,7 @@
 4. ColorZilla - 화면 색상 추출  
 5. Responsive Web Design Tester - 모바일 기기 화면 보기  
 6. Nimbus - 캡쳐프로그램  
-7. MaraCopy - 복사 방지되어있는 텍스트 복사하기  
-
-
+  
   
 ## 참고 사이트
 1. [한글입숨](https://hangul.thefron.me/) 
