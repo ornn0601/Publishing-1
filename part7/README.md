@@ -40,4 +40,68 @@
 * before after는 기본적으로 인라인 요소  
   
   
+## inherit  
+- 부모의 특정한 값을 상속한다.  
+- 기본 inherit : color, font-size, font-weight, letter-spacing, background-color, text-align  
   
+  
+## css var() 사용  
+- "--내용" 로 설정하고 var(--내용)으로 사용한다.  
+- 루트 설정을 통해 일괄 수정이 가능하다.  
+- ie 지원 안함  
+```css
+.parent {
+  --pwidth: 300px;
+  width: calc(var(--pwidth) * 2);
+}
+
+/* 변수를 모아놓는 곳 */
+:root {
+  --primary: royalblue;
+  --secondary: black;
+  --positive: yellowgreen;
+  --negative: crimson;
+  --big: 50px;
+  --medium: 30px;
+  --small: 14px;
+}
+
+/* 사용하기 */
+.btn.primary {
+  background-color: var(--primary);
+  font-size: var(--big);
+}
+```  
+  
+  
+## 이미지맵 사용하기  
+- 하나의 이미지에 여러개의 링크를 만들때  
+- 하나의 이미지에 특정위치에 링크를 만들때  
+- area를 통해 다중 사용 가능  
+- image map generator 검색으로 자동생성 사이트 찾아가기  
+  
+- 사각형 이미지맵 링크 만들기  
+-- 연결 : usemap = name  
+-- shape="rect"  
+-- coords="왼쪽상단 x , y , 오른쪽 하단 x , y"  
+-- href : 연결 주소  
+-- title : 마우스 올렸을때 나오는 텍스트, 링크 이름 또는 tip text 
+```html
+  <img src="" usemap="#id">
+  <map name="id">
+    <area shape="rect" coords="000,000,000,000" href="#" title="이름">
+  </map>
+```  
+  
+- 원형 이미지맵 링크 만들기  
+-- shape="circle"  
+-- coords="원의 중앙 x , y , 반지름"
+```html
+  <img src="" usemap="#id">
+  <map name="id">
+    <area shape="circle" coords="000,000,000" href="#" title="이름">
+    <area shape="circle" coords="000,000,000" href="#" title="이름">
+  </map>
+```  
+
+
