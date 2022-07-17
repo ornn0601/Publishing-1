@@ -25,6 +25,18 @@
       margin: 0;
     }
 
+    /* ie 지원 안함 */
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .container {}
+    header {
+      padding-bottom: 50vh;
+    }
+    section {
+      padding: 50vh 0;
+    }
 
   </style>
 </head>
@@ -36,9 +48,11 @@
       <a href="#part2">part1</a>
       <a href="#part3">part1</a>
     </header>
-    <h1 id="part1">part1</h1>
-    <p>내용</p>
-    <a class="btn-gotoTop" href="$">Go To Top</a>
+    <section>
+      <h1 id="part1">part1</h1>
+      <p>내용</p>
+      <a class="btn-gotoTop" href="$">Go To Top</a>
+    </section>
   </div>
 
 
@@ -49,9 +63,18 @@
 
   <script>
 
-    $('header a, .btn-gotoTop').click(function() {
-      $.scrollTo(this.hash || 0, 900);
+    // $('header a, .btn-gotoTop').click(function(e) {
+    //   $.scrollTo(this.hash || 0, 900); /* 900 : 속도 */
+    //   e.preventDefault();
+    // });
+    $('header a').click(function(e) {
+      $.scrollTo(this.hash || 0, 900); /* 900 : 속도 */
       e.preventDefault();
+    });
+    $('.btn-gotoTop').click(function(e) {
+      e.preventDefault();
+      $('html, body').animate( { scrollTop : 0 }, 900 );
+	    return false;
     });
 
 
